@@ -1,0 +1,28 @@
+import { createStackNavigator } from 'react-navigation';
+
+
+import Main from './pages/main';
+
+
+
+
+export default createStackNavigator(
+    {
+    Main,
+    User_Siga,
+    Motora_Siga,
+    ListaMotora_Siga,
+    ListaUser_Siga,
+    MotoraComponent_Siga,
+    Reclama,
+    Login,
+},
+ {
+ navigationOptions: {
+     headerStyle: {
+         backgroundColor: "#3CB371"
+     },
+     headerTintColor: "#FFF"
+ },
+
+});

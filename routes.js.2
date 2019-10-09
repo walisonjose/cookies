@@ -1,0 +1,34 @@
+import { createStackNavigator } from 'react-navigation';
+
+
+import Main from './pages/main';
+import User_Siga from './pages/sigauser';
+import Motora_Siga from './pages/sigamotora';
+import ListaMotora_Siga from './pages/listamotora';
+import ListaUser_Siga from './pages/listauser'; 
+import MotoraComponent_Siga from './pages/sigamotora_component'; 
+import Reclama from './pages/reclama'; 
+import Login from './pages/FormLogin'; 
+
+
+
+export default createStackNavigator(
+    {
+    Main,
+    User_Siga,
+    Motora_Siga,
+    ListaMotora_Siga,
+    ListaUser_Siga,
+    MotoraComponent_Siga,
+    Reclama,
+    Login,
+},
+ {
+ navigationOptions: {
+     headerStyle: {
+         backgroundColor: "#3CB371"
+     },
+     headerTintColor: "#FFF"
+ },
+
+});

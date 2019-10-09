@@ -1,0 +1,56 @@
+---
+name: FlexibleTabBarComponent
+menu: Components
+---
+
+import { PropsTable, Playground } from 'docz';
+import FlexibleTabBarComponent from './FlexibleTabBarComponent';
+
+# FlexibleTabBarComponent
+
+## Props
+
+<PropsTable of={FlexibleTabBarComponent} />
+
+## Usage
+
+Usage with default theme
+
+```
+import { FlexibleTabBarComponent } from 'react-navigation-custom-bottom-tab-component/FlexibleTabBarComponent';
+
+const Navigation = createBottomTabNavigator(
+  {
+    HomeStack,
+    LinksStack,
+    SettingsStack,
+  },
+  {
+    tabBarComponent: FlexibleTabBarComponent,
+  },
+);
+
+export default createAppContainer(Navigation);
+
+```
+
+If you would like to customize some styles you can do it by:
+
+```
+import { FlexibleTabBarComponent, withCustomStyle } from 'react-navigation-custom-bottom-tab-component/FlexibleTabBarComponent';
+
+const Navigation = createBottomTabNavigator(
+  {
+    HomeStack,
+    LinksStack,
+    SettingsStack,
+  },
+  {
+    tabBarComponent: withCustomStyle({
+        style: {
+            backgroundColor: 'red',
+        },
+    })(FlexibleTabBarComponent),
+  },
+);
+```

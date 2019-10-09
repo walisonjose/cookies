@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:orientation="vertical" >
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:text="Número 1" />
+
+<EditText
+android:id="@+id/num01"
+
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+    android:inputType="numberDecimal" />
+
+<TextView
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+
+android:text="Número 2" />
+
+<EditText
+android:id="@+id/num02"
+
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+    android:inputType="numberDecimal"
+
+ />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/resultado"
+        android:text="Resultado: " />
+
+<Button
+android:id="@+id/btn_somar"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+
+android:text="Calcular" />
+
+    <Button
+        android:id="@+id/btn_sobre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="Sobre" />
+</LinearLayout>

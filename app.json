@@ -1,0 +1,11 @@
+{
+  "name": "cookies",
+  "displayName": "cookies",
+
+"icon": "./assets/icon.png",
+"splash": {
+  "image": "./assets/budmol_splash.png",
+  "resizeMode": "contain",
+  "backgroundColor": "#ffffff"
+}
+}
